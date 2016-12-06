@@ -6,8 +6,8 @@ import VueResource from 'vue-resource'
 Vue.use(VueRouter);
 Vue.use(VueResource);
 
-import firstcomponent from './components/firstcomponent.vue'
-import secondcomponent from './components/secondcomponent.vue'
+import acomponent from './component/a.vue'
+import bcomponent from './component/b.vue'
 
 const router = new VueRouter({
   mode: 'history',
@@ -15,11 +15,11 @@ const router = new VueRouter({
   routes: [
     {
       path: '/first',
-      component: firstcomponent
+      component: acomponent
     },
     {
       path: '/second',
-      component: secondcomponent
+      component: bcomponent
     }
   ]
 })
